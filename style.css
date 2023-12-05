@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#bgimg{
+    /* height: 538px; */
+    /* width: 100%; */
+    background-image: url(./assessts/bodybuilding.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    max-width: 100%;
+    filter: grayscale();
+    
+}
+li{
+    transition: all 0.2s;
+}
+ 
+a:hover{
+    background-color: black;
+    color: white;
+    transition: ease all 0.2s;
+}
+
+
+ @-webkit-keyframes tracking-out-expand {
+    0% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 0.8;
+    }
+    100% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+  }
+  @keyframes tracking-out-expand {
+    0% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 0.8;
+    }
+    100% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+  }
+    
+
+#city{
+    -webkit-animation: tracking-out-expand 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) alternate-reverse;
+    animation: tracking-out-expand 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) alternate-reverse;
+} 
+#city{
+    transition: all ease 2s;
+    letter-spacing: 10px;
+}
+
+  
+ button {
+  background-color: whitesmoke;
+  color: black;
+  font-size: 25px;
+  font-family: 'monospace';
+  border: none;
+}
+
+/* Hover effect */
+button:hover {
+  background-color: lightgray; /* Change the background color on hover */
+  transition: background-color 0.3s; /* Add a smooth transition effect */
+}
